@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Himanshu</title>
+  <meta name="description" content="Get in touch with Himanshu.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="window">
+    <header class="titlebar">
+      <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="path">~/himanshu/contact</span>
+    </header>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">./about</a>
+      <a href="projects.html">./projects</a>
+      <a href="contact.html">./contact</a>
+    </nav>
+    <main id="main">
+      <section class="block">
+        <p class="prompt">./contact --interactive</p>
+        <h1>Contact</h1>
+        <p>The fastest way to reach me is LinkedIn. Or draft a note below. It's copied to your clipboard and LinkedIn opens, ready for you to paste it.</p>
+        <ul class="list">
+          <li><span class="key">github</span> <a href="https://github.com/himanshuuem">github.com/himanshuuem</a></li>
+          <li><span class="key">linkedin</span> <a href="https://www.linkedin.com/in/himanshuuem">linkedin.com/in/himanshuuem</a></li>
+        </ul>
+      </section>
+
+      <section class="block">
+        <form class="contact-form" novalidate>
+          <label>name<input name="name" required autocomplete="name"></label>
+          <label>subject<input name="subject" required></label>
+          <label>message<textarea name="message" rows="5" required></textarea></label>
+          <p class="error" role="alert"></p>
+          <button type="submit">$ copy --open linkedin</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <span>© <span data-year></span> Himanshu</span>
+      <span>built with plain HTML/CSS · no frameworks</span>
+    </footer>
+  </div>
+  <script src="app.js" defer></script>
+</body>
+</html>

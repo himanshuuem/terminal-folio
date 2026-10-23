@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Himanshu</title>
+  <meta name="description" content="Selected projects by Himanshu.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="window">
+    <header class="titlebar">
+      <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="path">~/himanshu/projects</span>
+    </header>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">./about</a>
+      <a href="projects.html">./projects</a>
+      <a href="contact.html">./contact</a>
+    </nav>
+    <main id="main">
+      <section class="block">
+        <p class="prompt">ls -la projects/</p>
+        <h1>Projects</h1>
+        <div class="filter" role="group" aria-label="Filter projects">
+          <button type="button" data-filter="all" aria-pressed="true">all</button>
+          <button type="button" data-filter="ml" aria-pressed="false">ml</button>
+          <button type="button" data-filter="web" aria-pressed="false">web</button>
+        </div>
+      </section>
+
+      <section class="projects">
+        <article class="project" data-kind="ml">
+          <h2>Lab Grader</h2>
+          <p>Built as a TA for the Java OOP lab at IIEST Shibpur. It pulls submissions from Google Classroom through an MCP server, repairs code that Word or Google Docs mangled, reads output screenshots with OCR, runs each program in a Docker sandbox against hidden tests and flags copied code. Nothing is published until a TA approves it.</p>
+          <p class="stack">python · docker · mcp · ocr</p>
+        </article>
+        <article class="project" data-kind="ml">
+          <h2>SIoT Security ML</h2>
+          <p>My MTech thesis at IIEST Shibpur: dual-layer machine-learning detection of Sybil, DDoS/botnet and bad-mouthing attacks in Social IoT networks.</p>
+          <p class="stack">python · machine learning · security</p>
+        </article>
+        <article class="project" data-kind="web">
+          <h2><a href="https://himanshuuem.github.io/cinelist/">CineList</a></h2>
+          <p>A ranked film watchlist with genre filters, search and a remembered dark mode.</p>
+          <p class="stack">html · css · js</p>
+        </article>
+        <article class="project" data-kind="web">
+          <h2><a href="https://himanshuuem.github.io/rsvp-card/">Stargazer RSVP</a></h2>
+          <p>A glassmorphism invitation with a live countdown, RSVP form and .ics calendar export.</p>
+          <p class="stack">html · css · js</p>
+        </article>
+      </section>
+    </main>
+    <footer class="footer">
+      <span>© <span data-year></span> Himanshu</span>
+      <span>built with plain HTML/CSS · no frameworks</span>
+    </footer>
+  </div>
+  <script src="app.js" defer></script>
+</body>
+</html>
